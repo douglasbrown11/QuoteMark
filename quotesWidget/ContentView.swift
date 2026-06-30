@@ -11,6 +11,7 @@ struct ContentView: View {
     @EnvironmentObject var store: QuoteStore
     @State private var text = ""
     @State private var author = ""
+    @State private var showImport = false
     @AppStorage(QuoteNotifications.enabledKey) private var reminderEnabled = false
 
     var body: some View {
@@ -62,6 +63,18 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("QuoteMark")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showImport = true
+                    } label: {
+                        Label("Import", systemImage: "square.and.arrow.down")
+                    }
+                }
+            }
+            .sheet(isPresented: $showImport) {
+                ImportQuotesView()
+            }
             .onChange(of: store.quotes) { _, newQuotes in
                 if reminderEnabled {
                     QuoteNotifications.refresh(with: newQuotes)

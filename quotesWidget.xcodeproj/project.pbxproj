@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D635252FF34B9F008F07EF /* QuoteParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D635202FF34B9F008F07EF /* QuoteParser.swift */; };
+		19D635262FF34B9F008F07EF /* quotesWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D635232FF34B9F008F07EF /* quotesWidgetApp.swift */; };
+		19D635272FF34B9F008F07EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6351D2FF34B9F008F07EF /* ContentView.swift */; };
+		19D635282FF34B9F008F07EF /* ImportQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6351E2FF34B9F008F07EF /* ImportQuotesView.swift */; };
+		19D635292FF34B9F008F07EF /* QuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D635212FF34B9F008F07EF /* QuoteStore.swift */; };
+		19D6352A2FF34B9F008F07EF /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6351F2FF34B9F008F07EF /* Quote.swift */; };
+		19D6352B2FF34B9F008F07EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D6351C2FF34B9F008F07EF /* Assets.xcassets */; };
 		A3F39CFF2FBCF0C70061CB92 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F39CFE2FBCF0C70061CB92 /* WidgetKit.framework */; };
 		A3F39D012FBCF0C70061CB92 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F39D002FBCF0C70061CB92 /* SwiftUI.framework */; };
 		A3F39D0E2FBCF0CA0061CB92 /* QuotesWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A3F39CFC2FBCF0C70061CB92 /* QuotesWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -51,6 +58,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19D6351C2FF34B9F008F07EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D6351D2FF34B9F008F07EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19D6351E2FF34B9F008F07EF /* ImportQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportQuotesView.swift; sourceTree = "<group>"; };
+		19D6351F2FF34B9F008F07EF /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		19D635202FF34B9F008F07EF /* QuoteParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteParser.swift; sourceTree = "<group>"; };
+		19D635212FF34B9F008F07EF /* QuoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStore.swift; sourceTree = "<group>"; };
+		19D635222FF34B9F008F07EF /* quotesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quotesWidget.entitlements; sourceTree = "<group>"; };
+		19D635232FF34B9F008F07EF /* quotesWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quotesWidgetApp.swift; sourceTree = "<group>"; };
 		A3DBA7322FBCEF5800F41615 /* quotesWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quotesWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DBA73F2FBCEF5B00F41615 /* quotesWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quotesWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DBA7492FBCEF5B00F41615 /* quotesWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quotesWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,25 +83,9 @@
 			);
 			target = A3F39CFB2FBCF0C70061CB92 /* QuotesWidgetExtensionExtension */;
 		};
-		A3F39D152FBCF19E0061CB92 /* Exceptions for "quotesWidget" folder in "QuotesWidgetExtensionExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Quote.swift,
-				QuoteStore.swift,
-			);
-			target = A3F39CFB2FBCF0C70061CB92 /* QuotesWidgetExtensionExtension */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A3DBA7342FBCEF5800F41615 /* quotesWidget */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A3F39D152FBCF19E0061CB92 /* Exceptions for "quotesWidget" folder in "QuotesWidgetExtensionExtension" target */,
-			);
-			path = quotesWidget;
-			sourceTree = "<group>";
-		};
 		A3DBA7422FBCEF5B00F41615 /* quotesWidgetTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = quotesWidgetTests;
@@ -141,11 +140,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19D635242FF34B9F008F07EF /* quotesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				19D6351C2FF34B9F008F07EF /* Assets.xcassets */,
+				19D6351D2FF34B9F008F07EF /* ContentView.swift */,
+				19D6351E2FF34B9F008F07EF /* ImportQuotesView.swift */,
+				19D6351F2FF34B9F008F07EF /* Quote.swift */,
+				19D635202FF34B9F008F07EF /* QuoteParser.swift */,
+				19D635212FF34B9F008F07EF /* QuoteStore.swift */,
+				19D635222FF34B9F008F07EF /* quotesWidget.entitlements */,
+				19D635232FF34B9F008F07EF /* quotesWidgetApp.swift */,
+			);
+			path = quotesWidget;
+			sourceTree = "<group>";
+		};
 		A3DBA7292FBCEF5800F41615 = {
 			isa = PBXGroup;
 			children = (
+				19D635242FF34B9F008F07EF /* quotesWidget */,
 				A3F39D182FBCF2610061CB92 /* QuotesWidgetExtensionExtension.entitlements */,
-				A3DBA7342FBCEF5800F41615 /* quotesWidget */,
 				A3DBA7422FBCEF5B00F41615 /* quotesWidgetTests */,
 				A3DBA74C2FBCEF5B00F41615 /* quotesWidgetUITests */,
 				A3F39D022FBCF0C70061CB92 /* QuotesWidgetExtension */,
@@ -190,9 +204,6 @@
 			);
 			dependencies = (
 				A3F39D0D2FBCF0CA0061CB92 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A3DBA7342FBCEF5800F41615 /* quotesWidget */,
 			);
 			name = quotesWidget;
 			packageProductDependencies = (
@@ -277,7 +288,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2650;
-				LastUpgradeCheck = 2650;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					A3DBA7312FBCEF5800F41615 = {
 						CreatedOnToolsVersion = 26.5;
@@ -322,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D6352B2FF34B9F008F07EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D635252FF34B9F008F07EF /* QuoteParser.swift in Sources */,
+				19D635262FF34B9F008F07EF /* quotesWidgetApp.swift in Sources */,
+				19D635272FF34B9F008F07EF /* ContentView.swift in Sources */,
+				19D635282FF34B9F008F07EF /* ImportQuotesView.swift in Sources */,
+				19D635292FF34B9F008F07EF /* QuoteStore.swift in Sources */,
+				19D6352A2FF34B9F008F07EF /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +450,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -455,6 +474,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -494,6 +514,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = G73MR894DY;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -510,6 +531,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -522,6 +544,7 @@
 				CODE_SIGN_ENTITLEMENTS = quotesWidget/quotesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -569,6 +592,7 @@
 				CODE_SIGN_ENTITLEMENTS = quotesWidget/quotesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -614,6 +638,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
@@ -640,6 +665,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
@@ -665,6 +691,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
@@ -690,6 +717,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = G73MR894DY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
